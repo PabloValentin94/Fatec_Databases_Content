@@ -1,0 +1,114 @@
+-- Tabelas Simples (Sem chave estrangeira.):
+
+Endereco (
+
+    id,
+    estado,
+    cidade,
+    bairro,
+    logradouro,
+    numero,
+    cep
+
+);
+
+Marca (
+
+    id,
+    nome
+
+);
+
+Servico (
+
+    id,
+    nome,
+    preco
+
+);
+
+Funcionario (
+
+    id,
+    nome,
+    telefone
+
+);
+
+-- Tabelas Complexas (Com chave estrangeira.):
+
+Produto (
+
+    id,
+    nome,
+    preco,
+    unidade_medida,
+    modelo,
+
+    id_marca
+
+);
+
+Cliente (
+
+    id,
+    nome,
+    email,
+    telefone,
+    tipo,
+    cpf,
+    cnpj,
+
+    id_endereco
+
+);
+
+Equipamento (
+
+    id,
+    descricao,
+    ano_fabricacao,
+    observacoes,
+    especiicacoes,
+
+    id_marca,
+    id_cliente
+
+);
+
+Ordem_Servico (
+
+    id,
+    data_abertura,
+    data_conclusao,
+
+    id_cliente, -- Opcional.
+    id_funcionario,
+    id_equipamento
+
+    -- Poderíamos puxar o cliente pelos dados do equipamento, mas por questão didática, não faremos isso agora.
+
+);
+
+-- Tabelas Associativas (Duas ou mais chaves estrangeiras definem a condição de existência de um campo.):
+
+Ordem_Servico_Servico_Assoc (
+
+    id_ordem_servico,
+    id_servico
+
+);
+
+Funcionario_Servico_Assoc (
+
+    id_funcionario,
+    id_servico
+
+);
+
+Ordem_Servico_Produto_Assoc (
+
+    id_ordem_servico,
+    id_produto
+
+);

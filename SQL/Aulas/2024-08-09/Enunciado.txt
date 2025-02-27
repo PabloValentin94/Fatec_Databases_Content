@@ -1,0 +1,29 @@
+⚫ Clínica:
+
+Requisições:
+
+- Médicos com especialização única;
+
+- Uma especialização pode conter vários médicos;
+
+- Atendimentos (Data de Atendimento.) de pacientes feitos por médicos;
+
+- Um médico atende vários pacientes;
+
+- Um paciente é atendido por vários médicos;
+
+- Pacientes podem ou não ter vários exames;
+
+- Vários pacientes podem fazer um mesmo tipo de exame.
+
+Dados:
+
+Especialização (ID e descrição.);
+
+Médico (ID, nome, sexo, data_nascimento e CRM.);
+
+Paciente (ID, nome, sexo e data_nascimento.);
+
+Endereço (Logradouro, bairro, cidade e estado.);
+
+Exame (ID, descrição e preço.).

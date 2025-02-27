@@ -1,0 +1,31 @@
+Entidade: representa um conjunto de dados que se relacionam entre si para formar uma coisa só (Cliente, Produto, Funcionário, etc.).
+
+Atributo simples: representa um dado/característica de uma entidade (Nome, CPF, Validade, etc.).
+
+Atributo composto: possui a mesma lógica de um atributo simples, mas esse tipo de atributo pode ser dividido em outros (Endereço, por exemplo, pode ser dividido em País, Estado, Cidade, Bairro, Logradouro, Número e CEP.).
+
+Atributo multivalorado: representa um dado que pode ter mais de um valor para si (Um telefone, por exemplo, pode ter vários valores em um banco de dados, pois uma pessoa, na maioria das vezes, tem mais de um telefone.). Existem dois tipos de atributos multivalorados: o simultâneo e o não simultâneo. Exemplos:
+
+Atributo multivalorado simultâneo: quando um atributo tem mais de um valor ao mesmo tempo (Uma pessoa pode cadastrar mais de um telefone, ao mesmo tempo, dentro de um aplicativo.).
+
+Atributo multivalorado não simultâneo: quando um atributo tem mais de uma possibilidade de valor, mas só um é definido (Quando uma pessoa vai definir seu sexo em um aplicativo, são disponibilizados vários valores, mas só um deve ser escolhido.).
+
+Relacionamento: como o próprio nome diz, relaciona duas entidades (Um cliente compra vários produtos, Um fornecedor fornece vários produtos, etc.).
+
+Cardinalidade: determina o caráter quantitativo de uma entidade em uma relação (Um cliente pode aparecer em várias vendas, mas uma venda só pode ter um cliente, por exemplo.).
+
+Possibilidades da cardinalidade máxima entre entidades:
+
+1:1 (Um para um.);
+
+1:N (Um para vários.);
+
+N:N (Vários para vários. Cria-se uma nova entidade.).
+
+Possibilidades da cardinalidade mínima entre entidades:
+
+0:0 (Nenhuma/Opcional para nenhuma/opcional.);
+
+0:1 (Nenhuma/Opcional para uma/obrigatória.);
+
+1:1 (Uma/Obrigatória para uma/obrigatória.).
