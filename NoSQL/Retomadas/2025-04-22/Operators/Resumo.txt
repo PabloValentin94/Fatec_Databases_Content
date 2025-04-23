@@ -1,0 +1,105 @@
+Analise os materiais para compreender a sintaxe e a aplicação de cada um.
+
+⚪ Operadores de Busca de Documentos:
+
+    ⬜ Operadores de Comparação:
+
+        - $eq: "igual a";
+
+        - $ne: "diferente de";
+
+        - $gt: "maior que";
+
+        - $lt: "menor que";
+
+        - $gte: "maior ou igual a";
+
+        - $lte: "menor ou igual a";
+
+    ⬜ Operadores Lógicos:
+
+        - $and: todas as condições devem ser atendidas para a que condição geral seja verdadeira;
+
+        - $or: alguma das condições deve ser atendida para que a condição geral seja verdadeira;
+
+        - $not: inverte o resultado da condição geral (Falso vira verdadeiro e vice-versa.);
+
+        - $nor: para que a condição geral seja verdadeira, nenhuma das condições especificadas pode ser atendida.
+
+    ⬜ Operadores de Elementos:
+
+        - $exists: verifica se um campo existe em um determinado documento;
+
+        - $type: verifica o tipo do valor de um campo de um determinado documento.
+
+⚪ Operadores de Atualização de Documentos:
+
+    ⬜ Operadores Estruturais:
+
+        - $set: adiciona ou atualiza um campo;
+
+        - $unset: remove um campo;
+
+        - $rename: renomeia um campo.
+
+    ⬜ Operadores Matemáticos:
+
+        - $inc: incrementa (Soma) um valor ao valor atual de um campo numérico;
+
+        - $mul: multiplica o valor atual de um campo numérico pelo valor passado;
+
+        - $min: o valor passado para atualizar o campo numérico precisa ser igual ou maior que o mínimo especificado;
+
+        - $max: o valor passado para atualizar o campo numérico precisa ser igual ou menor que o máximo especificado.
+
+    ⬜ Operadores de Array:
+
+        - $push: adiciona um novo valor ao final do array;
+
+        - $pop: remove um elemento de uma extremidade do array (Depende do que for especificado.);
+
+        - $pull: remove um elemento específico do array;
+
+        - $addToSet: adiciona um elemento ao array, somente se ele ainda não existir;
+
+        - $pullAll: remove vários elementos de um array;
+
+        - $each: utilizado com o operador $push para adicionar mais de um elemento de uma vez ao array.
+
+⚪ Operadores de Agregação:
+
+    - $lookup: une duas coleções (Semelhante ao JOIN.);
+
+    - $group: agrupa documentos com base em uma condição (Semelhante ao GROUP BY.);
+
+    - $match: aplica um filtro (Semelhante ao WHERE.);
+
+    - $sort: organiza os documentos com base em uma condição (Semelhante ao ORDER BY.);
+
+    - $project: determina quais campos serão exibidos na saída da pipeline (É possível gerar campos momentâneos, como médias, etc.);
+
+    - $limit: delimita quantos campos, do total encontrado, serão retornados (Semelhante ao LIMIT.);
+
+    - $skip: determina quantos campos, a partir do início do retorno, devem ser ignorados (Não aparecem.);
+
+    - $unwind: "desfaz" um array (Cada elemento se torna independente.);
+
+    - $addFields: adiciona um campo ao retorno da pipeline;
+
+    - $set: faz o mesmo que o operador $addFields, mas também permite modificar o valor de um campo já existente;
+
+    - $count: conta a quantidade de documentos retornados pela pipeline;
+
+    - $sum: soma o valor de um campo para cada documento da pipeline (Soma continuamente, ou seja, obtém a soma geral.);
+
+    - $avg: obtém a média de um determinado campo (Faz o mesmo que o operador $sum, mas, ao final, divide pela quantidade de documentos.);
+
+    - $min: encontra o valor mínimo de um campo em uma coleção de documentos;
+
+    - $max: encontra o valor máximo de um campo em uma coleção de documentos;
+
+    - $first: obtém o primeiro elemento da coleção retornada pela pipeline;
+
+    - $last: obtém o último elemento da coleção retornada pela pipeline;
+
+    - Entre outros.

@@ -1,0 +1,23 @@
+Execução Padrão (Sem o Índice de Nome.):
+
+    "executionSuccess" : true,
+    "nReturned" : 1,
+    "executionTimeMillis" : 12,
+    "totalKeysExamined" : 0,
+    "totalDocsExamined" : 15000
+
+Execução com o Índice de Nome:
+
+    "executionSuccess" : true,
+    "nReturned" : 1,
+    "executionTimeMillis" : 2,
+    "totalKeysExamined" : 1,
+    "totalDocsExamined" : 1
+
+Execução com o Índice Nativo de ID:
+
+    "executionSuccess" : true,
+    "nReturned" : 1,
+    "executionTimeMillis" : 0,
+    "totalKeysExamined" : 1,
+    "totalDocsExamined" : 1
