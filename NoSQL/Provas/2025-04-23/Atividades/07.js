@@ -25,7 +25,7 @@ db.filmes.aggregate([
 
     {$addFields: {
 
-        decada: "$_id" // Neste estágio, o valor do campo "_id" refere-se a decada.
+        decada: "$_id" // Neste estágio, o valor do campo "_id" refere-se a década.
 
     }},
 
